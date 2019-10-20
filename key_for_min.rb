@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
    name_hash.map do |item, amount|
      if amount < amount
-       return item
+       return item.first
      end
   end  
 end
