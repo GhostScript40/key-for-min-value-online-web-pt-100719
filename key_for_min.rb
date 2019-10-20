@@ -8,7 +8,7 @@ name_hash.map do |item, ammount|
   end
     if ammount.last < ammount.first
       return item.last
-    else 
-      return nil
     end
+    nil
+  end
 end
