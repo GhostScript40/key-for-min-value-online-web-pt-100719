@@ -2,9 +2,11 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-   i = 0
+   
    name_hash.map do |item, amount|
-    if amount[0] 
+    i = amount
+    if amount < i
+      return item
      end
   end  
 end
